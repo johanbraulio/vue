@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" 
+    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>Test VueJs</title>
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <template v-if="status">
+                <div class="alert alert-primary" role="alert">Conetado.!!</div>
+                <ol>
+                    <li>Primero</li>
+                    <li>Segundo</li>
+                    <li>Tercero</li>
+                </ol>
+            </template>
+            <div v-else class="alert alert-danger" role="alert">No conetado</div>
+
+
+
+            <!-- <h5 v-if="age < 10">Escuela</h5>
+                <h5 v-else-if="age < 18">Colegio</h5>
+                    <h5 v-else-if="age < 21">Universidad</h5>
+            <h5 v-else>Profesional</h5> -->
+
+            <pre>{{$data}}</pre>
+        </div>
+    </div>
+
+    <!-- vue js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
